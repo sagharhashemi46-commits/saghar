@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Saghar Photography</title>
+	<meta name="description" content="Cinematic & vintage portrait photography by Saghar.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- Sticky transparent header -->
+	<header class="site-header">
+		<nav class="nav">
+			<a class="brand" href="#home">Saghar Photography</a>
+			<button class="menu-toggle" aria-label="Toggle menu">
+				<span></span><span></span><span></span>
+			</button>
+			<ul class="nav-links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#packages">Packages</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Grain overlay (global subtle texture) -->
+	<div class="grain"></div>
+
+	<main>
+		<!-- 1) Homepage -->
+		<section id="home" class="section hero" aria-label="Homepage hero">
+			<div class="hero-media">
+				<img src="https://images.unsplash.com/photo-1516570161787-2fd917215a3d?q=80&w=2400&auto=format&fit=crop" alt="Cinematic black and white portrait background">
+			</div>
+			<div class="hero-content fade-in">
+				<h1 class="logo-script" aria-label="Saghar Photography">Saghar Photography</h1>
+				<p class="subtitle">Cinematic &amp; Vintage Portrait Photographer</p>
+			</div>
+			<a href="#portfolio" class="scroll-indicator" aria-label="Scroll to portfolio">▼</a>
+		</section>
+
+		<!-- 2) About Me -->
+		<section id="about" class="section about" aria-labelledby="about-title">
+			<div class="container">
+				<h2 id="about-title" class="section-title">About Saghar</h2>
+				<div class="about-grid">
+					<div class="portrait fade-in">
+						<img class="portrait-img" src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=800&auto=format&fit=crop" alt="Portrait of Saghar">
+					</div>
+					<div class="about-copy fade-in delay-1">
+						<p class="lede">
+							Minimal, vintage, and deeply human. The work focuses on quiet moments that reveal character and story—images that feel like stills from a film you once loved.
+						</p>
+						<p>
+							Style keywords: <strong>vintage</strong>, <strong>emotional</strong>, <strong>storytelling</strong>. Each frame is crafted with gentle light, soft grain, and elegant restraint.
+						</p>
+						<div class="skills">
+							<span>Photography</span>
+							<span>Editing</span>
+							<span>Model Directing</span>
+							<span>Creative Art Direction</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 3) Portfolio -->
+		<section id="portfolio" class="section portfolio" aria-labelledby="portfolio-title">
+			<div class="container">
+				<h2 id="portfolio-title" class="section-title">Portfolio</h2>
+
+				<div class="gallery fade-in">
+					<!-- Replace with your images; data-full used for lightbox -->
+					<figure class="card">
+						<img src="https://images.unsplash.com/photo-1520975930468-6b1f1a7a2f5b?q=80&w=800&auto=format&fit=crop"
+							 data-full="https://images.unsplash.com/photo-1520975930468-6b1f1a7a2f5b?q=80&w=2400&auto=format&fit=crop"
+							 alt="Portrait 1">
+					</figure>
+					<figure class="card">
+						<img src="https://images.unsplash.com/photo-1503342217505-b0a15cf70489?q=80&w=800&auto=format&fit=crop"
+							 data-full="https://images.unsplash.com/photo-1503342217505-b0a15cf70489?q=80&w=2400&auto=format&fit=crop"
+							 alt="Portrait 2">
+					</figure>
+					<figure class="card">
+						<img src="https://images.unsplash.com/photo-1506468203959-4439e0e35a7e?q=80&w=800&auto=format&fit=crop"
+							 data-full="https://images.unsplash.com/photo-1506468203959-4439e0e35a7e?q=80&w=2400&auto=format&fit=crop"
+							 alt="Portrait 3">
+					</figure>
+					<figure class="card">
+						<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop"
+							 data-full="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2400&auto=format&fit=crop"
+							 alt="Portrait 4">
+					</figure>
+					<figure class="card">
+						<img src="https://images.unsplash.com/photo-1517241938558-898c3afe02c8?q=80&w=800&auto=format&fit=crop"
+							 data-full="https://images.unsplash.com/photo-1517241938558-898c3afe02c8?q=80&w=2400&auto=format&fit=crop"
+							 alt="Portrait 5">
+					</figure>
+					<figure class="card">
+						<img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=800&auto=format&fit=crop"
+							 data-full="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=2400&auto=format&fit=crop"
+							 alt="Portrait 6">
+					</figure>
+				</div>
+			</div>
+			<!-- Lightbox -->
+			<div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+				<button class="lightbox-close" aria-label="Close">&times;</button>
+				<img class="lightbox-img" alt="">
+				<button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+				<button class="lightbox-next" aria-label="Next image">&#10095;</button>
+			</div>
+		</section>
+
+		<!-- 4) Packages -->
+		<section id="packages" class="section packages" aria-labelledby="packages-title">
+			<div class="container">
+				<h2 id="packages-title" class="section-title">Packages</h2>
+				<div class="package-grid fade-in">
+					<article class="package-card">
+						<h3>Basic Portrait Session</h3>
+						<p class="price">$250</p>
+						<ul class="features">
+							<li>60-minute session</li>
+							<li>1 location</li>
+							<li>10 edited images</li>
+							<li>Online delivery</li>
+						</ul>
+						<a href="#contact" class="btn">Book Now</a>
+					</article>
+
+					<article class="package-card">
+						<h3>Premium Model Session</h3>
+						<p class="price">$490</p>
+						<ul class="features">
+							<li>2-hour session</li>
+							<li>2 locations</li>
+							<li>25 edited images</li>
+							<li>Direction & styling</li>
+						</ul>
+						<a href="#contact" class="btn">Book Now</a>
+					</article>
+
+					<article class="package-card">
+						<h3>Cinematic Editorial Package</h3>
+						<p class="price">$950</p>
+						<ul class="features">
+							<li>Half-day production</li>
+							<li>Creative art direction</li>
+							<li>High-end retouching</li>
+							<li>Commercial usage</li>
+						</ul>
+						<a href="#contact" class="btn">Book Now</a>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- 5) Contact -->
+		<section id="contact" class="section contact" aria-labelledby="contact-title">
+			<div class="container">
+				<h2 id="contact-title" class="section-title">Contact</h2>
+				<form class="contact-form fade-in" action="#" method="post" onsubmit="return false;">
+					<div class="form-row">
+						<label for="name">Name</label>
+						<input id="name" name="name" type="text" required>
+					</div>
+					<div class="form-row">
+						<label for="email">Email</label>
+						<input id="email" name="email" type="email" required>
+					</div>
+					<div class="form-row">
+						<label for="message">Message</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
+					</div>
+					<button class="btn" type="submit">Send Message</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; <span id="year"></span> Saghar Photography</p>
+			<a href="https://instagram.com/your_instagram" target="_blank" rel="noopener" aria-label="Instagram">Instagram ↗</a>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
